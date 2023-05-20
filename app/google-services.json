@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "549011114961",
+    "project_id": "vehicle-parkers-alert",
+    "storage_bucket": "vehicle-parkers-alert.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:549011114961:android:d6dfe8bcedc487f3be2ef0",
+        "android_client_info": {
+          "package_name": "com.example.vpa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "549011114961-jcc070ib95i77otve6iugspbn5p7n1t1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQsWz0W0ik_rLBIIZ1cdbSOTN3723Ww2o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "549011114961-jcc070ib95i77otve6iugspbn5p7n1t1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

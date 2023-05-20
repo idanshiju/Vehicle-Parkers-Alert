@@ -66,17 +66,16 @@
             android:id="@+id/owner_contno"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
             android:hint="Contact No"
             android:textColorHint="#575454"
-            app:boxStrokeColor="@color/black"
-            app:counterEnabled="true"
-            app:counterMaxLength="10">
+            app:boxStrokeColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="phone"
+                android:maxLength="10"
                 android:textColor="@color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -88,7 +87,9 @@
             android:layout_height="wrap_content"
             android:hint="Vehicle No"
             android:textColorHint="#575454"
-            app:boxStrokeColor="@color/black">
+            app:boxStrokeColor="@color/black"
+            app:placeholderText="AB 12CD 3456"
+            app:placeholderTextColor="#6D575454">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
