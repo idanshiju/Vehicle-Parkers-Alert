@@ -14,7 +14,8 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@drawable/carownerfind"
-        android:transitionName="logo_image"/>
+        android:transitionName="logo_image"
+        android:contentDescription="@string/contentDescription_applogo"/>
 
     <TextView
         android:id="@+id/owner_signup_name"
@@ -22,7 +23,7 @@
         android:layout_height="80dp"
         android:layout_marginTop="-25dp"
         android:fontFamily="@font/bungee"
-        android:text="Welcome"
+        android:text="@string/welcome"
         android:textColor="@color/black"
         android:textSize="40sp"
         android:transitionName="logo_text" />
@@ -32,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/allerta_stencil"
-        android:text="Signup"
+        android:text="@string/signup"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:transitionName="logo_text2"/>
@@ -50,8 +51,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:hint="Full Name"
-            android:textColorHint="#575454"
+            android:hint="@string/full_name"
+            android:textColorHint="@color/davy_grey"
             app:boxStrokeColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -67,8 +68,8 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Contact No"
-            android:textColorHint="#575454"
+            android:hint="@string/contact_no"
+            android:textColorHint="@color/davy_grey"
             app:boxStrokeColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -85,8 +86,8 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Vehicle No"
-            android:textColorHint="#575454"
+            android:hint="@string/vehicle_no"
+            android:textColorHint="@color/davy_grey"
             app:boxStrokeColor="@color/black"
             app:placeholderText="AB 12CD 3456"
             app:placeholderTextColor="#6D575454">
@@ -100,12 +101,12 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/owner_vehcolor"
+            android:id="@+id/owner_vehicle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:hint="Vehicle Color"
-            android:textColorHint="#575454"
+            android:hint="@string/vehicle"
+            android:textColorHint="@color/davy_grey"
             app:boxStrokeColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -122,9 +123,9 @@
         android:id="@+id/owner_go"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="GO"
+        android:text="@string/go_button"
         android:textColor="@color/black"
-        android:backgroundTint="#EDBC19"
+        android:backgroundTint="@color/button_yellow"
         android:transitionName="info_signup_trans"/>
 
 </LinearLayout>

@@ -4,5 +4,7 @@ class OwnerHelperClass(
     var name: String="",
     var contact: String="",
     var vehNo: String="",
-    var vehColor: String=""
+    var vehicle: String="",
+    var token: String="",
+    var notify:Int=0
 )

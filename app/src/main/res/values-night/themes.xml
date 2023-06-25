@@ -8,11 +8,18 @@
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">#ECEA59</item>
         <!-- Customize your theme here. -->
         <item name="android:windowContentTransitions">true</item>
         <item name="prefixTextColor">#6D575454</item>
     </style>
+
+//RecycleView
+    <style name="roundedImageViewRounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
 </resources>

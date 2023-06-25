@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "549011114961",
+    "firebase_url": "https://vehicle-parkers-alert-default-rtdb.firebaseio.com",
     "project_id": "vehicle-parkers-alert",
     "storage_bucket": "vehicle-parkers-alert.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "549011114961-h10co1ua91bg2je0dtdvdd946ial50k1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vpa",
+            "certificate_hash": "6b830885ef94217c5dcd46bc75d4b012a17ed512"
+          }
+        },
         {
           "client_id": "549011114961-jcc070ib95i77otve6iugspbn5p7n1t1.apps.googleusercontent.com",
           "client_type": 3

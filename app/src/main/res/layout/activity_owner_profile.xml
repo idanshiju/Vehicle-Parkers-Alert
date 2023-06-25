@@ -9,13 +9,13 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            android:background="#FECE2F"
+            android:background="@color/primary_yellow"
             android:padding="20dp">
 
             <ImageView
@@ -23,7 +23,8 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_centerVertical="true"
-                android:src="@drawable/profile_icon" />
+                android:src="@drawable/profile_icon"
+                android:contentDescription="@string/contentDescription_profilelogo"/>
 
             <TextView
                 android:id="@+id/fullname_field"
@@ -34,9 +35,20 @@
                 android:layout_toRightOf="@+id/profile_image"
                 android:fontFamily="@font/bungee"
                 android:includeFontPadding="false"
-                android:text="Dan Shiju"
+                android:text="dan shiju"
                 android:textColor="#000"
                 android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/button_delete"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:backgroundTint="@color/button_yellow"
+                android:src="@drawable/delete"
+                android:drawablePadding="8dp"
+                android:clickable="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"/>
         </RelativeLayout>
 
         <LinearLayout
@@ -62,7 +74,8 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/alert" />
+                        android:src="@drawable/alert"
+                        android:contentDescription="@string/contentDescription_alertlogo"/>
 
                     <TextView
                         android:id="@+id/alert_label"
@@ -71,7 +84,7 @@
                         android:layout_centerInParent="true"
                         android:fontFamily="@font/bungee"
                         android:includeFontPadding="false"
-                        android:text="1"
+                        android:text="0"
                         android:textColor="@color/white"
                         android:textSize="20sp" />
 
@@ -82,7 +95,7 @@
                         android:layout_below="@+id/alert_label"
                         android:layout_centerHorizontal="true"
                         android:includeFontPadding="false"
-                        android:text="Alerts"
+                        android:text="@string/alerts"
                         android:textSize="14sp" />
 
 
@@ -103,8 +116,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:hint="Full Name"
-                android:textColorHint="#575454"
+                android:hint="@string/full_name"
+                android:textColorHint="@color/davy_grey"
                 app:boxStrokeColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -113,7 +126,12 @@
                     android:drawableLeft="@drawable/profile_box"
                     android:drawablePadding="10dp"
                     android:text="Dan Shiju"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/black"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:inputType="none"
+                    android:textIsSelectable="false"
+                    android:longClickable="false"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -123,8 +141,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:hint="Contact No"
-                android:textColorHint="#575454"
+                android:hint="@string/contact_no"
+                android:textColorHint="@color/davy_grey"
                 app:boxStrokeColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -133,7 +151,12 @@
                     android:drawableLeft="@drawable/call_box"
                     android:drawablePadding="10dp"
                     android:text="7896543"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/black"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:inputType="none"
+                    android:textIsSelectable="false"
+                    android:longClickable="false"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -143,8 +166,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:hint="Vehicle No"
-                android:textColorHint="#575454"
+                android:hint="@string/vehicle_no"
+                android:textColorHint="@color/davy_grey"
                 app:boxStrokeColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -153,7 +176,12 @@
                     android:drawableLeft="@drawable/car_box"
                     android:drawablePadding="10dp"
                     android:text="KL 07 AB 1234"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/black"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:inputType="none"
+                    android:textIsSelectable="false"
+                    android:longClickable="false"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -163,8 +191,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:hint="Vehicle Color"
-                android:textColorHint="#575454"
+                android:hint="@string/vehicle_color"
+                android:textColorHint="@color/davy_grey"
                 app:boxStrokeColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -173,17 +201,14 @@
                     android:drawableLeft="@drawable/color_box"
                     android:drawablePadding="10dp"
                     android:text="Red"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/black"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:inputType="none"
+                    android:textIsSelectable="false"
+                    android:longClickable="false"/>
 
             </com.google.android.material.textfield.TextInputLayout>
-
-            <Button
-                android:id="@+id/button_update"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#EDBC19"
-                android:fontFamily="@font/bungee"
-                android:text="Update"></Button>
 
         </LinearLayout>
 

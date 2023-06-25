@@ -20,7 +20,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/contentDescription_applogo" />
 
     <TextView
         android:id="@+id/textView1"
@@ -28,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:fontFamily="@font/orbitron_bold"
-        android:text="Vehicle Parker's Alert"
+        android:text="@string/app_name_fullForm"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="25sp"
@@ -44,9 +45,9 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
         android:fontFamily="@font/antic"
-        android:text="Never be a hindrance to anyone! Get timely alerts to move your vehicle with our app."
+        android:text="@string/app_tagLine"
         android:textAlignment="center"
-        android:textColor="#7CBAEF"
+        android:textColor="@color/denium_blue"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

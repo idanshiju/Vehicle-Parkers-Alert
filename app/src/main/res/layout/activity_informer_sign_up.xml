@@ -14,7 +14,8 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@drawable/carownerfind"
-        android:transitionName="logo_image"/>
+        android:transitionName="logo_image"
+        android:contentDescription="@string/contentDescription_applogo" />
 
     <TextView
         android:id="@+id/informer_signup_name"
@@ -22,7 +23,7 @@
         android:layout_height="80dp"
         android:layout_marginTop="-25dp"
         android:fontFamily="@font/bungee"
-        android:text="Welcome"
+        android:text="@string/welcome"
         android:textColor="@color/black"
         android:textSize="40sp"
         android:transitionName="logo_text" />
@@ -32,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/allerta_stencil"
-        android:text="Signup"
+        android:text="@string/signup"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:transitionName="logo_text2"/>
@@ -50,8 +51,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:hint="Full Name"
-            android:textColorHint="#575454"
+            android:hint="@string/full_name"
+            android:textColorHint="@color/davy_grey"
             app:boxStrokeColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -67,8 +68,8 @@
             android:id="@+id/informer_contno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Contact No"
-            android:textColorHint="#575454"
+            android:hint="@string/contact_no"
+            android:textColorHint="@color/davy_grey"
             app:boxStrokeColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -86,8 +87,8 @@
         android:id="@+id/informer_go"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#EDBC19"
-        android:text="GO"
+        android:backgroundTint="@color/button_yellow"
+        android:text="@string/go_button"
         android:textColor="@color/black"
         android:transitionName="info_signup_trans" />
 

@@ -4,6 +4,8 @@
         <item>@font/allerta_stencil</item>
         <item>@font/antic</item>
         <item>@font/bungee</item>
+        <item>@font/muli</item>
+        <item>@font/muli_black</item>
         <item>@font/orbitron_bold</item>
     </array>
 </resources>

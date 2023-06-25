@@ -1,9 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".VerifyPhoneNo">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/muli_black"
+            android:includeFontPadding="false"
+            android:text="@string/VerifyPhoneNo_heading"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/cyan_blue"
+            android:textSize="100sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/muli_black"
+            android:includeFontPadding="false"
+            android:text="@string/VerifyPhoneNo_subHeading"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/sentNo_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/muli"
+            android:includeFontPadding="false"
+            android:textColor="@color/black"
+            android:text="Enter OTP sent on 7879996784"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:layout_marginTop="50dp"/>
+
+        <com.chaos.view.PinView
+            android:id="@+id/pin_view"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:cursorVisible="true"
+            android:inputType="number"
+            android:itemBackground="#ECEA59"
+            app:cursorColor="@color/black"
+            app:hideLineWhenFilled="true"
+            app:itemCount="6"
+            app:itemHeight="50dp"
+            app:itemRadius="5dp"
+            app:itemWidth="50dp"
+            app:lineColor="@color/cyan_blue"
+            app:lineWidth="1dp"
+            tools:ignore="MissingClass" />
+
+        <Button
+            android:id="@+id/button_verify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/button_yellow"
+            android:text="@string/button_verifyCode"
+            android:textColor="@color/black"
+            android:transitionName="transition_OTP_screen" />
+
+    </LinearLayout>
+
+</ScrollView>

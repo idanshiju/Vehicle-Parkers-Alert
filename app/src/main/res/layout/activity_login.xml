@@ -14,14 +14,15 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@drawable/carownerfind"
-        android:transitionName="logo_image"/>
+        android:transitionName="logo_image"
+        android:contentDescription="@string/contentDescription_applogo"/>
 
     <TextView
         android:id="@+id/login_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/bungee"
-        android:text="Hello there, Welcome Back"
+        android:text="@string/login_heading"
         android:textColor="@color/black"
         android:textSize="40sp"
         android:transitionName="logo_text" />
@@ -31,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/allerta_stencil"
-        android:text="Sign in as :"
+        android:text="@string/role"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:transitionName="logo_text2" />
@@ -50,9 +51,9 @@
             android:layout_width="200dp"
             android:layout_height="100dp"
             android:layout_marginTop="50dp"
-            android:backgroundTint="#EDBC19"
+            android:backgroundTint="@color/button_yellow"
             android:fontFamily="@font/antic"
-            android:text="OWNER"
+            android:text="@string/role1"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:transitionName="owner_signup_trans"/>
@@ -63,9 +64,9 @@
             android:layout_width="200dp"
             android:layout_height="100dp"
             android:layout_marginTop="15dp"
-            android:backgroundTint="#EDBC19"
+            android:backgroundTint="@color/button_yellow"
             android:fontFamily="@font/antic"
-            android:text="INFORMER"
+            android:text="@string/role2"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:layout_marginBottom="50dp"

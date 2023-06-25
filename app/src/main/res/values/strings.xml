@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">VPA</string>
+    //Main Activity
+    <string name="contentDescription_applogo">App logo</string>
+    <string name="app_name_fullForm">Vehicle Parker\'s Alert</string>
+    <string name="app_tagLine">Never be a hindrance to anyone! Get timely alerts to move your vehicle with our app.</string>
+
+    //Login Activity
+    <string name="login_heading">Hello there, Welcome Back</string>
+    <string name="role">Sign in as :</string>
+    <string name="role1">OWNER</string>
+    <string name="role2">INFORMER</string>
+
+    //Sign Up Activity
+    <string name="welcome">Welcome</string>
+    <string name="signup">Signup</string>
+    <string name="full_name">Full Name</string>
+    <string name="contact_no">Contact No</string>
+    <string name="vehicle_no">Vehicle No</string>
+    <string name="vehicle">Vehicle Model - Color</string>
+    <string name="go_button">GO</string>
+
+    //Owner Profile Activity
+    <string name="contentDescription_profilelogo">profile_logo</string>
+    <string name="contentDescription_alertlogo">alert_logo</string>
+    <string name="alerts">Alerts</string>
+    <string name="del_button">SIGN OUT</string>
+
+    //Verify Phone Activity
+    <string name="VerifyPhoneNo_heading">Co\nde</string>
+    <string name="contentDescription_closeIcon">close_icon</string>
+    <string name="VerifyPhoneNo_subHeading">Verification</string>
+    <string name="button_verifyCode">verify code</string>
+
 </resources>
