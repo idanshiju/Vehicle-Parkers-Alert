@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="VerifyPhoneNo_heading">Co\nde</string>
+    <string name="contentDescription_applogo">App logo</string>
+    <string name="app_name_fullForm">Vehicle Parker\'s Alert</string>
+    <string name="login_heading">Hello there, Welcome Back</string>
+    <string name="role1">OWNER</string>
+    <string name="welcome">Welcome</string>
+    <string name="signup">Signup</string>
+    <string name="full_name">Full Name</string>
+    <string name="contact_no">Contact No</string>
+    <string name="vehicle_no">Vehicle No</string>
+    <string name="vehicle_color">Vehicle Color</string>
+    <string name="go_button">GO</string>
+    <string name="contentDescription_profilelogo">profile_logo</string>
+    <string name="contentDescription_alertlogo">alert_logo</string>
+    <string name="alerts">Alerts</string>
+    <string name="contentDescription_closeIcon">close_icon</string>
+    <string name="button_verifyCode">verify code</string>
+</resources>
